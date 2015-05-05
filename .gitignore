@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.vimrc.local
+!.vimrc.bundles.local
+!.vimrc.before.local
+!README.md

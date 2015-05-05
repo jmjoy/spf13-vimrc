@@ -1,0 +1,20 @@
+imap jk <Esc>
+
+set guifont=WenQuanYi\ Micro\ Hei\ Mono\ 11
+
+syntax enable
+
+colorscheme solarized
+
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+
+" forbidden unamed register
+set clipboard=autoselect
+
+" easyMotion Gif config
+map <M-j> <Leader><Leader>j
+map <M-k> <Leader><Leader>k
