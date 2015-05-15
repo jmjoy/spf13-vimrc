@@ -1,20 +1,41 @@
+" avoid the escape key
 imap jk <Esc>
 
-set guifont=WenQuanYi\ Micro\ Hei\ Mono\ 11
-
-syntax enable
-
+" my favorite color theme
 colorscheme solarized
-
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
 
 " forbidden unamed register
 set clipboard=autoselect
 
-" easyMotion Gif config
-map <M-j> <Leader><Leader>j
-map <M-k> <Leader><Leader>k
+" use "p to access system clipboard
+map "p "+
+
+" Just Toggle NERDTREE in one tab
+map <C-e> <plug>NERDTreeToggle<CR>
+
+
+if has('gui_running')
+
+    " Key maps using the Alt modifier
+    set winaltkeys=no
+
+    " solarized light
+    set background=light
+
+    " my favorite font
+    set guifont=WenQuanYi\ Micro\ Hei\ Mono\ 11
+
+    " easyMotion under gvim
+    map <M-j> <Leader><Leader>j
+    map <M-k> <Leader><Leader>k
+    map <M-w> <Leader><Leader>w
+    map <M-b> <Leader><Leader>b
+
+else
+
+    " solarized dark
+    set background=dark
+
+endif
+
+
