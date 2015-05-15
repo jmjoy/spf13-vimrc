@@ -11,7 +11,7 @@ set clipboard=autoselect
 map "p "+
 
 " Just Toggle NERDTREE in one tab
-map <C-e> <plug>NERDTreeToggle<CR>
+map <C-e> :NERDTreeToggle<CR>
 
 
 if has('gui_running')
