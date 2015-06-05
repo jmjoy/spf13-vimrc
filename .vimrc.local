@@ -10,6 +10,9 @@ set clipboard=autoselect
 " use "p to access system clipboard
 map "p "+
 
+" fresh the color highlight
+map <F5> :syntax sync fromstart <cr>
+
 " Just Toggle NERDTREE in one tab
 " map <C-e> :NERDTreeToggle<CR>
 
